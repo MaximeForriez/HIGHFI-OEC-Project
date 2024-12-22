@@ -5475,7 +5475,7 @@ Lors de la lecture par l'objet `LectureCSV()`, chaque ligne du tableau contenu d
 
 ### `DateMaintenant`
 
-	La classe enregistre la date au moment où l'objet est sollicité.
+La classe enregistre la date au moment où l'objet est sollicité.
 
 - Variables d'instance :
 
