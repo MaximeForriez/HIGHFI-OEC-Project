@@ -62,7 +62,7 @@ Il lance la méthode `init()`.
 
 		- Elle appelle les méthodes `FondBoutonRadio()` et `FondBoutonsDAction()` qui gèrent la fenêtre.
 		
-		- Elle gère les événements des boutons radio, du bouton OK et du bouton Annuler par l'intermédiaire des classes suivantes : `ClicOK()` (interne) et `FenetreFermeture()` (externe).
+		- Elle gère les événements des boutons radio, du bouton `OK` et du bouton `Annuler` par l'intermédiaire des classes suivantes : `ClicOK()` (interne) et `FenetreFermeture()` (externe).
 
 			- `private JPanel fondBoutonRadio()`
 		
@@ -70,7 +70,7 @@ Il lance la méthode `init()`.
 
 			- `private JPanel fondBoutonsDAction()`
 		
-		- Elle crée les boutons OK et Annuler.
+		- Elle crée les boutons `OK` et `Annuler`.
 
 - Classes internes :
 	
@@ -154,7 +154,7 @@ C'est un objet qui hérite de `JFrame`.
 		
 		- Si un choix a déjà été opéré par l'utilisateur, elle appelle les objets : `BoiteACocherClassification(getChoixDesClassifications())` et `BoiteACocherNiveau(getChoixDesNiveaux())`
 
-	- getters et setters :
+	- *getters* et *setters* :
 	
 		- `public int getChoixDesClassifications()`
 
@@ -308,7 +308,7 @@ C'est un objet qui hérite de `JFrame`.
 				
 		- Elle gère l'événement du bouton Choisir les territoires par l'intermédiaire de la classe interne : `ClicTerritoire()`.
 				
-	- getters et setters
+	- *getters* et *setters*
 		
 		- `public String getChoixDesClassifications()`
 				
@@ -488,7 +488,7 @@ C'est un objet qui hérite de `JFrame`.
 			
 			- `setBorneAnneFin(baseAttributaireTerritoire.getBorneAnneeFin())`
 
-		*getters* et *setters*
+	-	*getters* et *setters*
 			
 			- `public BaseAttributaireTerritoire getBaseAttributaireTerritoire()`
 			
@@ -3107,7 +3107,8 @@ C'est un objet qui hérite de `JFrame`.
 	- `private void init()`
 		
 		- Elle initialise les variables d'instance par les méthodes : `donneesTerritoires()`, `setListeHS()`, `setNomHS()`, `setNomDossierHS()`, `setListeNiveau()`, `setSousDossierPartie1()`, `setSousDossierPartie2()`, `setDossier(dossier)`, `setSousDossier1(sousDossier1)`, `setSousDossier2(sousDossier2)`, `setSousDossier3(sousDossier3)`, `setChoixDesNiveauxInt(choixDesNiveauxInt)`, `setAnnee()`, `setEnglishName(englishNameTerritoire)`, `setNomFrancais(nomFrancaisTerritoire)`, `setNomContinent(nomContinent)`, `setAnneeDebutTerritoire(anneeDebutTerritoire)`, `setAnneeFin(anneeFinTerritoire)`, `setEnglishNameTerritoire2(englishNameTerritoire2)`, `setNomFrancaisTerritoire2(nomFrancaisTerritoire2)`, `setNomContinent2(nomContinent2)`, `setAnneeDebutTerritoire2(anneeDebutTerritoire2)` et `setAnneeFin2(anneeFinTerritoire2)`. Pour ce, l'ordre des initialisations est très important, puisque les méthodes utilisent les variables enregistrées *via* `getListeHS()`, `getNomHS()`, `getNomDossier(), `getListeNiveau()`, `getNiveau()`, `getSousDossierPartie1()`, `getSousDossierPartie2()`, `getAnneeDebut()`, `getAnneeFin()`, `getTerritoire()`, `getBaseAttributaireTerritoireCodeISO()`, `getBaseAttributaireTerritoireEnglishName()`, `getBaseAttributaireTerritoireNomFrancais()`, `getBaseAttributaireTerritoireNomContinent()`, `getBaseAttributaireTerritoireBorneAnneeDebut()`, `getBaseAttributaireTerritoireAnneeFin()`.
-		`private void donneesTerritoires()`
+
+	-	`private void donneesTerritoires()`
 		
 		- En appelant l'objet `BaseAttributaireTerritoire`, elle charge la base de données des territoires *via* les méthodes suivantes :
 			
